@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
-    
+    <main>
+        <h1>Conversor de Moedas</h1>
+
+        <section class="currency-section">
+            <p>DE</p>
+            <input type="number" id="fromAmount" placeholder="Digite o valor">
+            <select id="fromCurrency"></select>
+        </section>
+
+        <div class="swap">
+            <button id="swapBtn" title="Trocar moedas">⇅</button>
+        </div>
+
+        <section class="currency-section">
+            <p>PARA</p>
+            <input type="text" id="toAmount" readonly>
+            <select id="toCurrency"></select>
+        </section>
+
+        <div class="summary">
+            <span id="rate">1 USD = 5,45 BRL</span>
+            <span id="trend">📈</span>
+        </div>
+
+        <button id="convertBtn">Converter</button>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
