@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+main {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+    padding: 4.5rem 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #a78bfa 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.currency-section p {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.currency-section {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.currency-section input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid rgba(148, 163, 184, 0.2);
+    transition: border-color 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.currency-section input:focus {
+    border-bottom-color: #a78bfa;
+}
+
+.currency-section input::placeholder {
+    color: #64748b;
+    font-size: 1.7rem;
+}
+
+.flag-option {
+    background: #1D293D;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag-option img {
+    width: 25px;
+}
+
+.code {
+    color: white;
+    font-weight: 600;
+}
+
+.name {
+    color: #94a3b8;
+}
+
+#fromCurrency-ts-control,
+#toCurrency-ts-control {
+    background: #303C51;
+    border: 1px solid #465061;
+}
+
+.ts-control:focus,
+.ts-control:focus-within {
+    outline: none;
+    box-shadow: none;
+    border-color: #aaa;
+}
+
+.ts-dropdown .option:hover,
+.ts-dropdown .option.active {
+    background-color: #303C51;
+}
+
+.ts-control .item {
+    display: flex;
+    align-items: center;
+    background-color: #303C51;
+}
+
+.ts-dropdown {
+    border: 1px solid #465061 !important;
+}
+
+.swap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#swapBtn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    box-shadow:
+        0 10px 15px -3px rgba(139, 92, 246, 0.3),
+        0 4px 6px -2px rgba(139, 92, 246, 0.1);
+    border: none;
+    border-radius: 50%;
+    padding: 7.5px 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+#convertBtn {
+    background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    box-shadow:
+        0 10px 15px -3px rgba(139, 92, 246, 0.3),
+        0 4px 6px -2px rgba(139, 92, 246, 0.1);
+}

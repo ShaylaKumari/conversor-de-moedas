@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet"> <!-- Biblioteca para incluir img no option (Tom Select)-->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script> <!-- Biblioteca para incluir img no option (Tom Select)-->
+
 </head>
+
 <body>
     <main>
         <h1>Conversor de Moedas</h1>
@@ -27,9 +32,9 @@
             <select id="toCurrency"></select>
         </section>
 
-        <div class="summary">
+        <div class="summary currency-section">
             <span id="rate">1 USD = 5,45 BRL</span>
-            <span id="trend">📈</span>
+            <span id="trend"></span>
         </div>
 
         <button id="convertBtn">Converter</button>
@@ -37,4 +42,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
