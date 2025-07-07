@@ -20,7 +20,7 @@ main {
     margin: 0 auto;
     padding: 2rem 1rem;
     position: relative;
-    padding: 4.5rem 0px;
+    padding: 4.5rem 2rem;
 }
 
 h1 {
@@ -104,6 +104,11 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #94a3b8;
 }
 
+#toCurrency-ts-dropdown, #fromCurrency-ts-dropdown {
+    min-height: 300px;
+    height: auto;
+}
+
 #fromCurrency-ts-control,
 #toCurrency-ts-control {
     background: #303C51;
@@ -166,4 +171,12 @@ input[type="number"]::-webkit-outer-spin-button {
     box-shadow:
         0 10px 15px -3px rgba(139, 92, 246, 0.3),
         0 4px 6px -2px rgba(139, 92, 246, 0.1);
+}
+
+#exchangeChart {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
 }

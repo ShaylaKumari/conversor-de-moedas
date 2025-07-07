@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet"> <!-- Biblioteca para incluir img no option (Tom Select)-->
     <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script> <!-- Biblioteca para incluir img no option (Tom Select)-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--Biblioteca de gráficos -->
 
 </head>
 
@@ -34,7 +35,7 @@
 
         <div class="summary currency-section">
             <span id="rate">1 USD = 5,45 BRL</span>
-            <span id="trend"></span>
+            <canvas id="exchangeChart"></canvas>
         </div>
 
         <button id="convertBtn">Converter</button>
